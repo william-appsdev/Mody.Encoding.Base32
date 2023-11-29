@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,11 +6,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AssemblyName>tester</AssemblyName>
-    <RootNamespace>ZiloBase32EncodingNS.Tester</RootNamespace>
+    <RootNamespace>Mody.Encoding.Base32NS.Test</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\Base32\Base32.csproj" />
   </ItemGroup>
 
 </Project>

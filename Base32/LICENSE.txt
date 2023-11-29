@@ -1,0 +1,18 @@
+﻿Mody .NET API License
+
+Version 1.0, 28th November 2023
+
+Your use of this software is governed by the terms and conditions of the license agreement below. Please read the entire agreement before using this software. If you do not agree to the terms of this license, do not use the software.
+
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION:
+
+1. You are granted a non-exclusive, non-transferable, non-sublicensable license to use the software for your internal business purposes.
+
+2. You may not modify, adapt, merge, translate, reverse engineer, decompile, disassemble, or create derivative works based on the software.
+
+3. You may not distribute, publish, sublicense, or sell copies of the software.
+
+4. This software is provided "as is" without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
+
+Mody Technology
+modytech4u@gmail.com

@@ -1,24 +1,25 @@
-﻿using System.Numerics;
+﻿using System;
+using System.Numerics;
 using System.Text;
 
-namespace ZiloBase32EncodingNS
+namespace Mody.Encoding.Base32NS
 {
     /// <summary>
-    /// Represents the Zilo-base32 encoding.
+    /// Represents the Mody's base32 encoding.
     /// </summary>
     /// <remarks>
     /// A base32 encoding which ignores case, excluding the character 'I', 'L', 'O', and 'Z'.
     /// </remarks>
-    public static class ZiloBase32Encoding
+    public static class Base32
     {
-        private const int _Base = 32;
         private const string _CharSet = "0123456789ABCDEFGHJKMNPQRSTUVWXY";
+        private static readonly int _Base = _CharSet.Length;
 
         /// <summary>
-        /// Decodes all the bytes into a Zilo-base32 string.
+        /// Decodes all the bytes into a Mody's base32 string.
         /// </summary>
         /// <param name="bytes">The byte array containing the sequence of bytes to decode.</param>
-        /// <returns>A Zilo-base32 string that contains the results of decoding the specified sequence of bytes.</returns>
+        /// <returns>A Mody's base32 string that contains the results of decoding the specified sequence of bytes.</returns>
         public static string GetString(byte[] bytes)
         {
             StringBuilder stringBuilder = new StringBuilder();
@@ -44,11 +45,11 @@ namespace ZiloBase32EncodingNS
         }
 
         /// <summary>
-        /// Encodes all the characters in the specified Zilo-base32 string into a sequence of bytes.
+        /// Encodes all the characters in the specified Mody's base32 string into a sequence of bytes.
         /// </summary>
-        /// <param name="s">The Zilo-base32 string containing the characters to encode.</param>
-        /// <returns>A byte array containing the results of encoding the specified set of Zilo-base32 characters.</returns>
-        /// <exception cref="ZiloBase32Exception"><c>s</c> containing undefined character in the Zilo-base32 character set.</exception>
+        /// <param name="s">The Mody's base32 string containing the characters to encode.</param>
+        /// <returns>A byte array containing the results of encoding the specified set of Mody's base32 characters.</returns>
+        /// <exception cref="Base32Exception"><c>s</c> containing undefined character in the Mody's base32 character set.</exception>
         public static byte[] GetBytes(string s)
         {
             BigInteger bigInteger = 0;
@@ -68,7 +69,7 @@ namespace ZiloBase32EncodingNS
                         bigInteger = bigInteger * _Base + b;
                     }
                     else
-                        throw new ZiloBase32Exception($"Unable to decode due to existence of \"{s[i]}\" in the argument.");
+                        throw new Base32Exception($"Unable to decode due to existence of \"{s[i]}\" in the argument.");
                 }
             }
 
@@ -76,9 +77,9 @@ namespace ZiloBase32EncodingNS
         }
 
         /// <summary>
-        /// Converts the Zilo-base32 string to its byte array equivalent. A return value indicates whether the operation succeeded.
+        /// Converts the Mody's base32 string to its byte array equivalent. A return value indicates whether the operation succeeded.
         /// </summary>
-        /// <param name="s">The Zilo-base32 string containing the characters to encode.</param>
+        /// <param name="s">The Mody's base32 string containing the characters to encode.</param>
         /// <param name="bytes">The byte array containing the sequence of bytes to decode.</param>
         /// <returns><c>true</c> if <c>s</c> was converted successfully; otherwise, <c>false</c>.</returns>
         public static bool TryGetBytes(string s, out byte[] bytes)

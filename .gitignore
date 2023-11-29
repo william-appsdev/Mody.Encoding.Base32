@@ -1,6 +1,7 @@
 
 *.nupkg
-Core/bin/
-Core/obj/
+.vs/
+Base32/bin/
+Base32/obj/
 Tester/bin/
 Tester/obj/

@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Mody.Encoding.Base32NS</RootNamespace>
+    <AssemblyName>Mody.Encoding.Base32</AssemblyName>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Mody's Base32 Encoding</Title>
+    <Company>Mody Technology</Company>
+	<Copyright>Copyright (C) Mody Technology 2023</Copyright>
+    <Product>Mody's Base32 Encoding</Product>
+    <PackageIcon>icon.png</PackageIcon>
+    <Description>A variation of base-32 encoding which is case-insensitive.</Description>
+    <Authors>William Ong</Authors>
+	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+	<PackageReadMeFile>README.md</PackageReadMeFile>
+	<ProjectUrl>https://github.com/william-appsdev/Mody.Encoding.Base32</ProjectUrl>
+    <RepositoryUrl>https://github.com/william-appsdev/Mody.Encoding.Base32</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+	<Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <None Include="icon.png" Pack="true" PackagePath="\"/>
+	  <None Include="LICENSE.txt" Pack="true" PackagePath="\" />
+	  <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

@@ -1,15 +1,15 @@
 ﻿using System.Numerics;
 
-namespace ZiloBase32EncodingNS.Tester
+namespace Mody.Encoding.Base32NS.Test
 {
     internal class Program
     {
         private static void Main(string[] args)
         {
-            BigInteger input = 32;
+            BigInteger input = 1023;
             byte[] bytes = input.ToByteArray();
-            string base32Encoded = ZiloBase32Encoding.GetString(bytes);
-            byte[] base32Decoded = ZiloBase32Encoding.GetBytes(base32Encoded);
+            string base32Encoded = Base32.GetString(bytes);
+            byte[] base32Decoded = Base32.GetBytes(base32Encoded);
             BigInteger output = new BigInteger(base32Decoded);
             bool isSuccess = output == input;
 
@@ -18,7 +18,13 @@ namespace ZiloBase32EncodingNS.Tester
             else
                 Console.WriteLine("Tested failed");
 
-            Console.WriteLine(ZiloBase32Encoding.GetBytes("i"));
+            base32Decoded = Base32.GetBytes("abc");
+            base32Encoded = Base32.GetString(base32Decoded);
+            isSuccess = base32Encoded.Equals("abc", StringComparison.OrdinalIgnoreCase);
+            if (isSuccess)
+                Console.WriteLine($"Tested OK.");
+            else
+                Console.WriteLine("Tested failed");
         }
     }
 }
