@@ -1,6 +1,6 @@
 
 *.nupkg
-.vs/
+.vs
 Base32/bin/
 Base32/obj/
 Tester/bin/
