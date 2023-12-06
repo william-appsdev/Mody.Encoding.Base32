@@ -27,7 +27,7 @@ namespace Mody.Encoding.Base32NS
             {
                 char ch;
                 int remainder;
-                BigInteger input = new BigInteger(bytes);
+                BigInteger input = new BigInteger(bytes, true);
                 BigInteger quotient = input;
 
                 do

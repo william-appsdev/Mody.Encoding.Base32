@@ -1,4 +1,4 @@
-﻿Mody .NET API License
+﻿Mody Technology .NET API License
 
 Version 1.0, 28th November 2023
 
