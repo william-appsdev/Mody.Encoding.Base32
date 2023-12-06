@@ -1,3 +1,0 @@
-E:\William\DotNetProjects\Mody.Encoding\WpfApp\bin\publish\Mody.Encoding.Base32.WpfApp.pdb
-E:\William\DotNetProjects\Mody.Encoding\WpfApp\bin\publish\Mody.Encoding.Base32.pdb
-E:\William\DotNetProjects\Mody.Encoding\WpfApp\bin\publish\Mody.Encoding.Base32.WpfApp.exe
